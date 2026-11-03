@@ -1,0 +1,196 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interior Design Studio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f4f1ed;
+    color: #333;
+}
+
+/* Navigation */
+
+nav {
+    background: #26352f;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #d6b98c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Main Section */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 70px 8%;
+    flex-wrap: wrap;
+}
+
+.content {
+    max-width: 400px;
+}
+
+.content h1 {
+    font-size: 42px;
+    color: #26352f;
+    margin-bottom: 15px;
+}
+
+.content p {
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Room Card */
+
+.room {
+    width: 420px;
+    height: 350px;
+    background: #e8d8c5;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px #0002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.room h2 {
+    color: #26352f;
+    font-size: 28px;
+}
+
+/* Buttons */
+
+button {
+    padding: 12px 22px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #26352f;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #b18b5e;
+    transform: translateY(-3px);
+}
+
+.colors {
+    margin-top: 20px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #26352f;
+    color: white;
+    margin-top: 30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>INTERIOR STUDIO</h2>
+
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Design</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<section class="container">
+
+    <div class="content">
+
+        <h1>Design Your Dream Room</h1>
+
+        <p>
+        Welcome to Interior Design Studio.
+        Choose your favourite room colour
+        and create your own beautiful space.
+        </p>
+
+        <h3>Select Room Colour</h3>
+
+        <div class="colors">
+
+            <button onclick="changeColor('#e8d8c5')">
+            Beige
+            </button>
+
+            <button onclick="changeColor('#b7c9bd')">
+            Green
+            </button>
+
+            <button onclick="changeColor('#c5d9e8')">
+            Blue
+            </button>
+
+            <button onclick="changeColor('#e8c5d0')">
+            Pink
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="room" id="room">
+
+        <h2>Beautiful Living Room</h2>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Interior Design Studio | All Rights Reserved
+</footer>
+
+<script>
+
+function changeColor(color) {
+
+    document.getElementById("room").style.backgroundColor = color;
+
+}
+
+</script>
+
+</body>
+</html>
+```
